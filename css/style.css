@@ -1,14 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500&family=Lato:wght@400;700;900&family=Montez&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=League+Script&display=swap");
 
-/* 
-font-family: 'Bitter', serif;
-font-family: 'Lato', sans-serif;
-font-family: 'Montez', cursive;
-font-family: 'Dancing Script', cursive;
-color #edf1f2
- */
-
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +14,7 @@ color #edf1f2
   --logo-font: "Montez", cursive;
   --main-font-color: #4f5364;
   --link-color: #9f5a01;
+  --green-primary: #225d27;
   --background-color: #edf1f2;
 }
 
@@ -104,7 +97,13 @@ header {
 
 .nav a {
   color: #ffffff;
-  padding: 1rem;
+}
+
+.active {
+  background-color: rgba(16, 88, 7, 0.5);
+
+  padding: 1.5rem;
+  border-radius: 2px;
 }
 
 .logo h1 {
@@ -117,7 +116,7 @@ header {
 
 .nav-list {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .nav-link {
@@ -746,5 +745,15 @@ footer .social i {
     margin-top: 2rem;
     display: flex;
     gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 300px;
+  }
+
+  .entree {
+    width: 3250px;
   }
 }
